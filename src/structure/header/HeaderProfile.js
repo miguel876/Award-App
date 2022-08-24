@@ -1,13 +1,8 @@
-import React, { useRef, useState } from 'react'
-import { Avatar, ClickAwayListener, IconButton, Menu, MenuItem, MenuList, Popper, Stack, Typography } from '@mui/material'
+import React, { useState } from 'react'
+import { Avatar, IconButton, Menu, MenuItem, Stack, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
-import { authorName } from '../properties'
-
-function stringAvatar(name) {
-    return {
-      children: `${name.split(' ')[0][0]}${name.split(' ')[1][0]}`,
-    };
-  }
+import { authorName } from '../../properties'
+import { stringAvatar } from '../../utils';
 
 export default function HeaderProfile({ drawerHandler }) {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -23,7 +18,6 @@ export default function HeaderProfile({ drawerHandler }) {
   return (
     <Stack direction="row" spacing={2} alignItems="center" justifyContent="flex-end">
         <Typography>{authorName}</Typography>
-        
         <Stack>
         <IconButton
             onClick={handleClick}

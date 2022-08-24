@@ -9,7 +9,7 @@ export default function Main() {
 
   return (
     <main>
-      <Container>
+      <Container sx={{ height: '100%'}}>
         {route}
       </Container>
         

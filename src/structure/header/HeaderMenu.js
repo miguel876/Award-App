@@ -1,7 +1,7 @@
 import React from 'react'
-import { routes } from '../routes'
+import { routes } from '../../routes'
 import { Stack  } from '@mui/material';
-import CustomLink from '../components/CustomLink';
+import CustomLink from '../../components/CustomLink';
 
 export default function HeaderMenu() {
   return (
