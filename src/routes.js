@@ -1,6 +1,6 @@
 import About from "./pages/About";
+import CandidateDetail from "./pages/CandidateDetail";
 import Candidates from "./pages/Candidates";
-import CandidatesDetail from "./pages/CandidatesDetail";
 import Dashboard from "./pages/Dashboard";
 import Ranking from "./pages/Ranking";
 
@@ -24,7 +24,7 @@ export const routes = [
             },
             {
                 path: 'candidate/:id',
-                element: <CandidatesDetail />,
+                element: <CandidateDetail />,
             }
 
         ]
