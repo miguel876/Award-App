@@ -1,13 +1,22 @@
 export const colors = {
     palette: {
         primary: {
-            main: '#EA1D1D',
+            main: '#fd7670',
+            light: '#fff',
+            dark: '#e76774',
+            contrastText: '#fff'
           },
         secondary: {
-            light: '#585858',
-            main: '#F3F3F3',
-            contrastText: '#000000',
+            light: '#fff',
+            main: '#E0E0E0',
+            contrastText: '#fff',
             
-        },     
+        },   
+        accent: {
+            light: '#fff',
+            main: '#E0E0E0',
+            dark: '#a19d9d',
+            contrastText: '#000',
+        }  
     }
 }
